@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --color-cream: #FFF8F2;
+  --color-blush: #F6D6D3;
+  --color-burgundy: #6A0D2A;
+  --color-rosewood: #8B3B46;
+  --color-latte: #E9DCC9;
+  --color-slate: #475569;
+}
+
+html,body,#__next{
+  height:100%;
+}
+
+body{
+  @apply bg-[color:var(--color-cream)] text-slate-800;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-burgundy);
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow p-6;
+}
